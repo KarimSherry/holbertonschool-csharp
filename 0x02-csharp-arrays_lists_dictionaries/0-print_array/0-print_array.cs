@@ -4,6 +4,8 @@ namespace _0_print_array
 {
     class Array
     {
+        static void Main(string[] args)
+    {
              public static int[] CreatePrint(int size)
              {
                  if (size < 0)
@@ -27,5 +29,6 @@ namespace _0_print_array
         
             }
         }
+    }
     }
 }
