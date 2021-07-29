@@ -4,10 +4,21 @@ namespace _0_print_array
 {
     class Array
     {
-        static void Main(string[] args)
-        {
-            var cp = CreatePrint(10);
-        }
+           static void Main(string[] args)
+            {
+                int[] newArray;
+
+                newArray = Array.CreatePrint(10);
+                Console.WriteLine("Array Length: " + newArray.Length);
+                Console.WriteLine("----------------");
+                newArray = Array.CreatePrint(16);
+                Console.WriteLine("Array Length: " + newArray.Length);
+                Console.WriteLine("----------------");
+                newArray = Array.CreatePrint(0);
+                Console.WriteLine("Array Length: " + newArray.Length);
+                Console.WriteLine("----------------");
+                newArray = Array.CreatePrint(-10);
+            }
             public static int[] CreatePrint(int size)
             {
                  if (size < 0)
@@ -26,12 +37,8 @@ namespace _0_print_array
                     for(int i=0;i<size;i++)
                     {
                         array[i] = i;
-                        Console.Write($"{i} ");
-                        
-                        
+                        Console.Write($"{i} ");   
                     }
-                    Console.WriteLine(" ");
-                    Console.WriteLine("Array Length =" + size);
                     return array;
                  }
             }
