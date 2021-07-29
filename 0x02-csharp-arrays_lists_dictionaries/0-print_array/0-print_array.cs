@@ -5,16 +5,21 @@ namespace _0_print_array
     class Array
     {
         static void Main(string[] args)
-    {
-             public static int[] CreatePrint(int size)
-             {
+        {
+            var cp = CreatePrint(10);
+        }
+            public static int[] CreatePrint(int size)
+            {
                  if (size < 0)
                  {
                      Console.WriteLine("Size cannot be negative");
                      return null;
                  }
                  else if (size == 0)
-                 Console.WriteLine(" ");
+                 {
+                    Console.WriteLine(" ");
+                    return null;
+                 }
                  else
                  {
                     int[] array = new int[size];
@@ -22,13 +27,14 @@ namespace _0_print_array
                     {
                         array[i] = i;
                         Console.Write($"{i} ");
-                        Console.WriteLine(" ");
-                        Console.WriteLine("Array Length =" + size);
+                        
+                        
                     }
+                    Console.WriteLine(" ");
+                    Console.WriteLine("Array Length =" + size);
                     return array;
-        
+                 }
             }
-        }
-    }
+        
     }
 }
