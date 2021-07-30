@@ -13,7 +13,7 @@
             }
             else
             {
-                return a[index];
+                return array[index];
             }
         }
     }
