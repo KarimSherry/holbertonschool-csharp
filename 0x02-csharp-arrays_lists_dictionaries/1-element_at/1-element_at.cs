@@ -5,10 +5,14 @@
         public static int elementAt(int[] array, int index)
         {
             if (index < 0)
-            Console.Writeline("index is out of range");
+            {
+                Console.WriteLine("index is out of range");
+                return -1;
+            }
             else
             {
-                int[] array = new int[index];
+                int[] a = new int[index];
+                return a[index];
             }
         }
     }
