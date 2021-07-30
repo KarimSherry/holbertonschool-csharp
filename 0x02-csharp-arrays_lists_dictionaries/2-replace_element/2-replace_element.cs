@@ -1,12 +1,11 @@
 ﻿using System;
-
-namespace _2_replace_element
-{
     class Program
     {
-        static void Main(string[] args)
+        public static int[] ReplaceElement(int[] array, int index, int n)
         {
-            Console.WriteLine("Hello World!");
+            int[] a = new int[];
+            int[] array = a;
+            array[index] = n;
+            return array;
         }
     }
-}
