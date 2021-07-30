@@ -4,7 +4,7 @@
     {
         public static int elementAt(int[] array, int index)
         {
-            int[] a = new int[i];
+            int[] a = new int[];
             int[] array = a;
             if (index < 0 | index>array.Length)
             {
