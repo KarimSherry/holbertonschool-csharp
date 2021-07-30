@@ -1,33 +1,29 @@
 ﻿using System;
-
-
-    class Array
+class Array
+{
+    public static int[] CreatePrint(int size)
     {
-        public static int[] CreatePrint(int size)
+        if (size < 0)
         {
-            if (size < 0)
+            Console.WriteLine("Size cannot be negative");
+            return null;
+        }
+        else
+        {
+            int[] array = new int[size];
+            if (size == 0)
             {
-                Console.WriteLine("Size cannot be negative");
-                return null;
+                Console.WriteLine(" ");
             }
             else
             {
-                int[] array = new int[size];
-                if (size == 0)
+                for(int i=0;i<size;i++)
                 {
-                    Console.WriteLine(" ");
+                    array[i] = i;
+                    Console.Write($"{i} ");  
                 }
-                else
-                {
-                    for(int i=0;i<size;i++)
-                    {
-                        array[i] = i;
-                        Console.Write($"{i} ");  
-                    }
-                }
-                return array;
             }
+            return array;
         }
-        
-    }
-
+    }        
+}
