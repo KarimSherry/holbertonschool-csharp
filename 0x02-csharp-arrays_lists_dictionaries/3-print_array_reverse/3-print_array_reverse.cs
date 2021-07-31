@@ -1,10 +1,18 @@
 ﻿using System;
 
-    class Program
+    class Array
     {
         public static void Reverse(int[] array)
         {
-            for (var i=array.Length;i>-1;i--)
-            Console.WriteLine(array[i]);
+            if(array == null)
+            {
+                Console.WriteLine("");
+            }
+            else
+            {
+            for (var i=array.Length-1;i>-1;i--)
+            Console.Write(array[i] + " ");
+            }
+            Console.WriteLine("");
         }
     }
