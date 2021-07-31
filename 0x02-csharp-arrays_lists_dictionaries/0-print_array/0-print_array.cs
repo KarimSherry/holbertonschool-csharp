@@ -13,7 +13,7 @@ class Array
             int[] array = new int[size];
             if (size == 0)
             {
-                Console.WriteLine(" ");
+                Console.WriteLine("");
             }
             else
             {
