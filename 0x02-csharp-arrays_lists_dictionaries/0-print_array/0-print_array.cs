@@ -22,6 +22,7 @@ class Array
                     array[i] = i;
                     Console.Write($"{i} ");  
                 }
+                Console.WriteLine("");
             }
             return array;
         }
