@@ -2,3 +2,10 @@ C:\Users\karim\OneDrive\Desktop\holbertonschool-csharp\0x02-csharp-arrays_lists_
 C:\Users\karim\OneDrive\Desktop\holbertonschool-csharp\0x02-csharp-arrays_lists_dictionaries\1-element_at\obj\Debug\netcoreapp2.1\1-element_at.csproj.CoreCompileInputs.cache
 C:\Users\karim\OneDrive\Desktop\holbertonschool-csharp\0x02-csharp-arrays_lists_dictionaries\1-element_at\obj\Debug\netcoreapp2.1\1-element_at.AssemblyInfoInputs.cache
 C:\Users\karim\OneDrive\Desktop\holbertonschool-csharp\0x02-csharp-arrays_lists_dictionaries\1-element_at\obj\Debug\netcoreapp2.1\1-element_at.AssemblyInfo.cs
+C:\Users\karim\OneDrive\Desktop\holbertonschool-csharp\0x02-csharp-arrays_lists_dictionaries\1-element_at\bin\Debug\netcoreapp2.1\1-element_at.deps.json
+C:\Users\karim\OneDrive\Desktop\holbertonschool-csharp\0x02-csharp-arrays_lists_dictionaries\1-element_at\bin\Debug\netcoreapp2.1\1-element_at.runtimeconfig.json
+C:\Users\karim\OneDrive\Desktop\holbertonschool-csharp\0x02-csharp-arrays_lists_dictionaries\1-element_at\bin\Debug\netcoreapp2.1\1-element_at.runtimeconfig.dev.json
+C:\Users\karim\OneDrive\Desktop\holbertonschool-csharp\0x02-csharp-arrays_lists_dictionaries\1-element_at\bin\Debug\netcoreapp2.1\1-element_at.dll
+C:\Users\karim\OneDrive\Desktop\holbertonschool-csharp\0x02-csharp-arrays_lists_dictionaries\1-element_at\bin\Debug\netcoreapp2.1\1-element_at.pdb
+C:\Users\karim\OneDrive\Desktop\holbertonschool-csharp\0x02-csharp-arrays_lists_dictionaries\1-element_at\obj\Debug\netcoreapp2.1\1-element_at.dll
+C:\Users\karim\OneDrive\Desktop\holbertonschool-csharp\0x02-csharp-arrays_lists_dictionaries\1-element_at\obj\Debug\netcoreapp2.1\1-element_at.pdb

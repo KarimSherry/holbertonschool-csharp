@@ -1,19 +1,18 @@
 ﻿using System;
 
-    class Array
+class Array
+{
+    public static int elementAt(int[] array, int index)
     {
-        public static int elementAt(int[] array, int index)
+
+        if (index < 0 || index > array.Length)
         {
-            int[] a = new int[];
-            int[] array = a;
-            if (index < 0 | index>array.Length)
-            {
-                Console.WriteLine("index is out of range");
-                return -1;
-            }
-            else
-            {
-                return array[index];
-            }
+            Console.WriteLine("index is out of range");
+            return -1;
+        }
+        else
+        {
+            return array[index];
         }
     }
+}
