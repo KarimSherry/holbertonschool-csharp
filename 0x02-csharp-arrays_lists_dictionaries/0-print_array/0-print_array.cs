@@ -8,23 +8,27 @@ class Array
             Console.WriteLine("Size cannot be negative");
             return null;
         }
-        else
+
+        int[] array = new int[size];
+        if (size == 0)
         {
-            int[] array = new int[size];
-            if (size == 0)
+            Console.WriteLine();
+            return array;
+        }
+
+        for (int i = 0; i < size; i++)
+        {
+            array[i] = i;
+            Console.Write($"{i}", i);
+            if (i != size - 1)
             {
-                Console.WriteLine("");
+                Console.Write(" ");
             }
             else
             {
-                for(int i=0;i<size;i++)
-                {
-                    array[i] = i;
-                    Console.Write($"{i} ");  
-                }
-                Console.WriteLine("");
+                Console.WriteLine();
             }
-            return array;
         }
-    }        
+        return array;
+    }
 }
