@@ -8,11 +8,10 @@ class Array
             Console.WriteLine("Index out of range");
             return array;
         }
-        else
-        {
+       
             array[index] = n;
             return array;
-        }
+        
     }
 }
 
