@@ -1,22 +1,28 @@
 ﻿using System;
 
-    class Program
+class List
+{
+    public static List<int> CreatePrint(int size)
     {
-        public static List<int> CreatePrint(int size)
+        if (size < 0)
         {
-            if(size<0)
+            Console.WriteLine("Size cannot be negative");
+            return null;
+        }
+        else
+        {
+            List<int> List = new List<int>();
+            for (var i = 0; i < size; i++)
             {
-                Console.WriteLine("Size cannot be negative");
-                return null;
-            }
-            else
-            {
-                var list = new list<int>(size);
-                for(var i=0;i<list.Length;i++)
+                List.Add(i);
+                Console.Write(i);
+                if (i != size - 1)
                 {
-                    list[i]=i;
+                    Console.Write(" ");
                 }
-                return list;
             }
+            Console.WriteLine();
+            return List;
         }
     }
+}
