@@ -1,23 +1,15 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 class Dictionary
 {
-    public static string BestScore(Dictionary<string, int> myList)
+    public static void PrintSorted(Dictionary<string, string> myDict)
     {
-        if (myList.Count == 0)
+        List<string> key = new List<string>(myDict.Keys);
+        key.Sort();
+        for (int i = 0; i < myDict.Count; i++)
         {
-            return "None";
+            Console.WriteLine("{0}: {1}", key[i], myDict[key[i]]);
         }
-        string key = String.Empty;
-        int value = 0;
-        foreach (KeyValuePair<string, int> kvp in myList)
-        {
-            if (kvp.Value >= value)
-            {
-                value = kvp.Value;
-                key = kvp.Key;
-            }
-        }
-        return key;
     }
 }
