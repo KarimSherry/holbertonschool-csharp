@@ -2,17 +2,17 @@
 using System.Collections.Generic;
 class LList
 {
-    public static int GetNode(LinkedList<int> myLList, int n)
+    public static int Pop(LinkedList<int> myLList)
     {
-        int index = 0;
-        foreach (int element in myLList)
+        if (myLList.Count == 0)
         {
-            if (index == n)
-            {
-                return element;
-            }
-            index++;
+            return 0;
         }
-        return 0;
+        else
+        {
+            int head = myLList.First.Value;
+            myLList.RemoveFirst();
+            return head;
+        }
     }
 }
