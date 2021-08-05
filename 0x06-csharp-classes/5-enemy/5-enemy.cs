@@ -2,13 +2,17 @@
 
 namespace Enemies
 {
+    ///<summary>Creation of public class Zombie</summary>
     public class Zombie
     {
+        ///<summary>Creation of int health</summary>
         private int health;
+        ///<summary>Creation of public constructor for Zombie and Setting health to 0</summary>
         public Zombie()
         {
             health = 0;
         }
+        ///<summary>Creation of public constructor with exception</summary>
         public Zombie(int value)
         {
             if (value >= 0)
@@ -20,7 +24,9 @@ namespace Enemies
                 throw new ArgumentException("Health must be greater than or equal to 0");
             }
         }
+        ///<summary>Creation of string name</summary>
         private string name = "(No name)";
+        ///<summary>Creation of public property name</summary>
         public string Name
         {
             get
@@ -33,10 +39,12 @@ namespace Enemies
             }
 
         }
+        ///<summary>Creation of method that return Health</summary>
         public int GetHealth()
         {
             return health;
         }
+        ///<summary>Creation of public override toString</summary>
         public override string ToString()
         {
             return string.Format("Zombie Name: {0} / Total Health: {1}", name, health);
