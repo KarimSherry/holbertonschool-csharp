@@ -1,18 +1,12 @@
 ﻿using System;
-
-namespace _4_print_hexa
+class Program
 {
-    class Program
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
+        for (int numbers = 0; numbers <= 98; numbers++)
         {
-            int i;
-            string h;
-            for(i=0; i<99; i++)
-            {
-                h = i.ToString("X");
-                Console.Write("{0} = 0x{1} \n", i, h);
-            }
+            var hex = numbers.ToString("x");
+            Console.WriteLine("{0} = 0x{1}", numbers, hex);
         }
     }
 }

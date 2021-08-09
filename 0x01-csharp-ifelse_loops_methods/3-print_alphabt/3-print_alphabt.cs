@@ -1,12 +1,14 @@
 ﻿using System;
-
-namespace _3_print_alphabt
+class Program
 {
-    class Program
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
+        for (char alphabet = 'a'; alphabet <= 'z'; alphabet++)
         {
-            Console.Write("abcdfghijklmnoprstuvwxyz");
+            if (alphabet != 'q' && alphabet != 'e')
+            {
+                Console.Write(alphabet);
+            }
         }
     }
 }
