@@ -1,22 +1,29 @@
 ﻿using System;
-using System.Collections.Generic;
 
-///<summary>Vector class</summary>
+/// <summary>
+/// A class containing a public method reguarding vectors
+/// </summary>
 class VectorMath
 {
-    ///<summary>get magnitude for 2d and 3d vectors</summary>
+    /// <summary>
+    /// Calculates a dot product of either 2D or 3D vectors
+    /// </summary>
+    /// <param name="vector1">The first vector</param>
+    /// <param name="vector2">The second vector</param>
+    /// <returns>The dot product</returns>
     public static double DotProduct(double[] vector1, double[] vector2)
     {
-        double dotprod = 0;
+        if (vector1.GetLength(0) != vector2.GetLength(0))
+            return (-1);
 
-        if ((vector1.Length < 2 || vector1.Length > 3) || (vector2.Length < 2 || vector2.Length > 3))
-            return -1;
-        if (vector1.Length != vector2.Length)
-            return -1;
+        if (vector1.GetLength(0) != 2 && vector1.GetLength(0) != 3)
+            return (-1);
 
-        for (int i = 0; i < vector1.Length; i++)
-            dotprod += vector1[i] * vector2[i];
+        double sum = 0;
 
-        return dotprod;
+        for (int i = 0; i < vector1.GetLength(0); i++)
+            sum += vector1[i] * vector2[i];
+
+        return (sum);
     }
 }

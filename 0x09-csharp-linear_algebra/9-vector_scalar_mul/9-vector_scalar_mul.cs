@@ -1,18 +1,32 @@
 ﻿using System;
-using System.Collections.Generic;
 
-///<summary>Vector class</summary>
+/// <summary>
+/// A class containing a public method reguarding vector and scalars
+/// </summary>
 class VectorMath
 {
-    ///<summary>get magnitude for 2d and 3d vectors</summary>
+    /// <summary>
+    /// Multiplies a vector by a scalar
+    /// </summary>
+    /// <param name="vector">The vector to be multiplied</param>
+    /// <param name="scalar">The scalar to multiply the vector by</param>
+    /// <returns>Either the vector * scalar or -1</returns>
     public static double[] Multiply(double[] vector, double scalar)
     {
-        if (vector.Length < 2 || vector.Length > 3)
-            return new double[] {-1};
+        double[] fail = {-1};
 
-        for (int i = 0; i < vector.Length; i++)
-            vector[i] *= scalar;
+        if (vector.GetLength(0) != 2 && vector.GetLength(0) != 3)
+            return (fail);
 
-        return vector;
+        if (vector.GetLength(0) == 2)
+        {
+            double[] sum = {scalar * vector[0], scalar * vector[1]};
+            return (sum);
+        }
+        else
+        {
+            double[] sum = {scalar * vector[0], scalar * vector[1], scalar * vector[2]};
+            return (sum);
+        }
     }
 }

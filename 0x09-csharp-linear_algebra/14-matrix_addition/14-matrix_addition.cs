@@ -1,26 +1,40 @@
 ﻿using System;
-using System.Collections.Generic;
 
-///<summary>Vector class</summary>
+/// <summary>
+/// A class reguaring matrices
+/// </summary>
 class MatrixMath
 {
-    ///<summary>get magnitude for 2d and 3d vectors</summary>
+    /// <summary>
+    /// A public method that adds two matrices
+    /// </summary>
+    /// <param name="matrix1">The first matrix</param>
+    /// <param name="matrix2">The second matrix</param>
+    /// <returns>The sum of both matrices or -1</returns>
     public static double[,] Add(double[,] matrix1, double[,] matrix2)
     {
-        double[,] sum;
+        double[,] fail = { { -1 } };
 
-        if ((matrix1.GetLength(0) < 2 || matrix1.GetLength(0) > 3) || (matrix2.GetLength(0) < 2 || matrix2.GetLength(0) > 3))
-            return new double[,] {{-1}};
         if (matrix1.GetLength(0) != matrix1.GetLength(1) || matrix2.GetLength(0) != matrix2.GetLength(1))
-            return new double[,] {{-1}};
+            return (fail);
 
-        int len = matrix1.GetLength(0);
-        sum = new double[len, len];
+        if (matrix1.GetLength(0) != matrix2.GetLength(0) || matrix1.GetLength(1) != matrix2.GetLength(1))
+            return (fail);
 
-        for (int i = 0; i < len; i++)
-            for (int j = 0; j < len; j++)
-                sum[i,j] = matrix1[i,j] + matrix2[i,j];
+        if (matrix1.GetLength(0) != 2 && matrix1.GetLength(0) != 3)
+            return (fail);
 
-        return sum;
+        double[,] sum = null;
+
+        if (matrix1.GetLength(0) == 2)
+            sum = new double[2, 2];
+        else
+            sum = new double[3, 3];
+
+        for (int i = 0; i < matrix1.GetLength(0); i++)
+            for (int j = 0; j < matrix1.GetLength(1); j++)
+                sum[i, j] = matrix1[i, j] + matrix2[i, j];
+
+        return (sum);
     }
 }

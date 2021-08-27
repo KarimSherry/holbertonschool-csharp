@@ -1,22 +1,25 @@
 ﻿using System;
-using System.Collections.Generic;
 
-///<summary>Vector class</summary>
+/// <summary>
+/// A class containing a public method reguarding vectors
+/// </summary>
 class VectorMath
 {
-    ///<summary>get magnitude for 2d and 3d vectors</summary>
+    /// <summary>
+    /// To find the magnitude or length of a 2D or 3D vector
+    /// </summary>
+    /// <param name="vector">The vector in which to find the length of</param>
+    /// <returns>The length of the vector, else -1 if not 2D or 3D</returns>
     public static double Magnitude(double[] vector)
     {
-        if (vector.Length == 2)
-        {
-            double hypotenuse = Math.Sqrt((vector[0] * vector[0]) + (vector[1] * vector[1]));
-            return Math.Round(hypotenuse, 2);
-        }
-        else if (vector.Length == 3)
-        {
-            double hypotenuse = Math.Sqrt(((vector[0] * vector[0]) + (vector[1] * vector[1])) + (vector[2] * vector[2]));
-            return Math.Round(hypotenuse, 2);
-        }
-        return -1;
+        if (vector.GetLength(0) != 2 && vector.GetLength(0) != 3)
+            return (-1);
+
+        double sum = 0.0;
+
+        foreach (int num in vector)
+            sum += Math.Pow(num, 2.0);
+
+        return (Math.Round(Math.Sqrt(sum), 2));
     }
 }
